@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07342a">
+<meta name="description" content="Cartão digital de Osvair Linhares - Centro Oeste Distribuidora de Peças">
+<title>Meu Cartão | Osvair Linhares</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Meu Cartão">
+<meta name="mobile-web-app-capable" content="yes">
+
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#050c0a}
+  body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  .card{
+    position:relative;
+    width:min(100vw,768px);
+    line-height:0;
+    overflow:hidden;
+    background:#07110f;
+  }
+  .art{
+    width:100%;
+    height:auto;
+    display:block;
+    user-select:none;
+    -webkit-user-drag:none;
+  }
+  .hotspot{
+    position:absolute;
+    display:block;
+    z-index:4;
+    border-radius:14px;
+    text-decoration:none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .hotspot:focus-visible{
+    outline:3px solid #fff;
+    outline-offset:2px;
+  }
+  .phone{
+    left:16.0%;
+    top:49.1%;
+    width:68.5%;
+    height:5.5%;
+  }
+  .contact{
+    left:15.8%;
+    top:56.3%;
+    width:68.9%;
+    height:7.4%;
+  }
+  .whatsapp{
+    left:15.8%;
+    top:64.4%;
+    width:68.9%;
+    height:7.4%;
+  }
+  .qr-wrap{
+    position:absolute;
+    z-index:5;
+    left:36.0%;
+    top:75.3%;
+    width:28.5%;
+    aspect-ratio:1/1;
+    background:#fff;
+    border-radius:8px;
+    display:grid;
+    place-items:center;
+    padding:2.6%;
+    box-shadow:0 0 0 2px rgba(112,160,44,.9);
+    line-height:normal;
+  }
+  .qr-wrap img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+  }
+  @media (max-width:360px){
+    .card{width:100vw}
+  }
+</style>
+</head>
+<body>
+<main class="card" aria-label="Cartão digital de Osvair Linhares">
+  <img class="art" src="cartao-visual.jpg" alt="Cartão digital de Osvair Linhares">
+
+  <a class="hotspot phone"
+     href="tel:+5562991590026"
+     aria-label="Ligar para Osvair Linhares"></a>
+
+  <a class="hotspot contact"
+     href="osvair-linhares.vcf"
+     aria-label="Adicionar Osvair Linhares aos contatos"></a>
+
+  <a class="hotspot whatsapp"
+     href="https://wa.me/5562991590026"
+     target="_blank"
+     rel="noopener"
+     aria-label="Falar com Osvair Linhares no WhatsApp"></a>
+
+  <a class="qr-wrap"
+     href="https://osvairlinhares.github.io/cartao-osvair/"
+     aria-label="Abrir o cartão digital pelo QR Code">
+    <img src="qr-code.png" alt="QR Code do cartão digital">
+  </a>
+</main>
+</body>
+</html>

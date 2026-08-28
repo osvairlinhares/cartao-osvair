@@ -1,0 +1,19 @@
+ATUALIZAÇÃO — ÍCONE “MEU CARTÃO”
+
+Envie estes arquivos para a RAIZ do repositório GitHub:
+- index.html
+- cartao-visual.jpg
+- qr-code.png
+- osvair-linhares.vcf
+- apple-touch-icon.png
+- icon-192.png
+- icon-512.png
+- manifest.webmanifest
+
+IMPORTANTE:
+1. Substitua o index.html antigo pelo novo.
+2. Os quatro arquivos novos de ícone/manifest precisam ficar no mesmo nível do index.html.
+3. Depois que o GitHub Pages atualizar, no iPhone remova o atalho antigo e adicione novamente pelo Safari.
+4. No Android, remova o atalho antigo e adicione/instale novamente pelo Chrome.
+
+O endereço do cartão continua o mesmo.
