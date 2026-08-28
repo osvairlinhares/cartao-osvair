@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07342a">
+<title>Teste Android — Adicionar Contato</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;
+  background:#07110f;color:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+.box{
+  width:min(100%,420px);background:#10251f;border:1px solid rgba(255,255,255,.12);
+  border-radius:24px;padding:24px;
+}
+h1{font-size:24px;margin:0 0 8px}
+p{line-height:1.45;color:#d9e4df;margin:0 0 20px}
+.name{font-size:20px;font-weight:700;margin-bottom:4px}
+.meta{color:#b9c9c2;margin-bottom:22px;line-height:1.5}
+a{
+  display:block;text-align:center;text-decoration:none;font-weight:700;
+  padding:16px 18px;border-radius:14px;margin-top:12px;
+}
+.primary{background:#f0a500;color:#111}
+.secondary{background:#1d4b3e;color:#fff}
+small{display:block;color:#9eb1a9;margin-top:18px;line-height:1.45}
+</style>
+</head>
+<body>
+  <main class="box">
+    <h1>Teste de contato no Android</h1>
+    <p>Este teste não altera seu cartão principal.</p>
+    <div class="name">Osvair Linhares</div>
+    <div class="meta">
+      Gerente Comercial<br>
+      Centro Oeste Distribuidora de Peças<br>
+      +55 62 99159-0026
+    </div>
+    <a class="primary" href="intent:#Intent;action=android.intent.action.INSERT;type=vnd.android.cursor.dir/contact;S.name=Osvair%20Linhares;S.phone=%2B55%2062%2099159-0026;S.company=Centro%20Oeste%20Distribuidora%20de%20Pe%C3%A7as;S.job_title=Gerente%20Comercial;S.browser_fallback_url=https%3A%2F%2Fosvairlinhares.github.io%2Fcartao-osvair%2Fosvair-linhares.vcf;end">TESTAR ABERTURA DIRETA</a>
+    <a class="secondary" href="osvair-linhares.vcf">USAR VCF NORMAL</a>
+    <small>Se o Android aceitar o primeiro botão, deve abrir o aplicativo de Contatos. Se não aceitar, o navegador usa o VCF como alternativa.</small>
+  </main>
+</body>
+</html>
