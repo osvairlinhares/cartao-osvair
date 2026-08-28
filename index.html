@@ -1,297 +1,120 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0f2f28">
-  <meta name="description" content="Cartão digital de Osvair Linhares - Centro Oeste Distribuidora de Peças">
-  <title>Osvair Linhares | Centro Oeste Distribuidora de Peças</title>
-  <style>
-    :root{
-      --bg:#0d211d;
-      --bg2:#12382f;
-      --green:#1f7a5c;
-      --green2:#2a9a70;
-      --orange:#f28c28;
-      --cream:#f7f5ef;
-      --text:#10211d;
-      --muted:#6f7d78;
-      --white:#ffffff;
-      --line:#dde5e1;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      min-height:100vh;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-      background:
-        radial-gradient(circle at top right, rgba(242,140,40,.18), transparent 32%),
-        linear-gradient(160deg,var(--bg),var(--bg2));
-      color:var(--white);
-      padding:22px 14px 28px;
-    }
-    .shell{
-      width:min(100%,430px);
-      margin:0 auto;
-    }
-    .hero{
-      position:relative;
-      overflow:hidden;
-      border-radius:28px 28px 20px 20px;
-      background:linear-gradient(145deg,#fff,#f7f7f3);
-      padding:20px 18px 24px;
-      box-shadow:0 24px 60px rgba(0,0,0,.26);
-      color:var(--text);
-    }
-    .hero:before{
-      content:"";
-      position:absolute;
-      right:-55px; top:-45px;
-      width:180px; height:180px;
-      border-radius:50%;
-      border:18px solid rgba(31,122,92,.10);
-    }
-    .brand{
-      position:relative;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:2px 0 18px;
-    }
-    .brand img{
-      width:min(100%,260px);
-      max-height:92px;
-      object-fit:contain;
-      display:block;
-    }
-    .divider{
-      height:1px;background:linear-gradient(90deg,transparent,#d7dfdb,transparent);
-      margin:2px 0 18px;
-    }
-    .profile{
-      text-align:center;
-      position:relative;
-    }
-    .avatar{
-      width:88px;height:88px;border-radius:50%;
-      margin:0 auto 14px;
-      display:grid;place-items:center;
-      font-size:28px;font-weight:800;letter-spacing:.04em;
-      color:#fff;
-      background:linear-gradient(145deg,var(--green),#173f35);
-      border:5px solid #eef4f1;
-      box-shadow:0 10px 24px rgba(19,74,61,.22);
-    }
-    h1{
-      margin:0;
-      font-size:27px;
-      line-height:1.1;
-      letter-spacing:.02em;
-    }
-    .role{
-      margin:8px 0 3px;
-      font-size:17px;
-      font-weight:750;
-      color:var(--green);
-    }
-    .branch{
-      margin:0 0 3px;
-      font-size:15px;
-      font-weight:650;
-      color:#2c3a36;
-    }
-    .company{
-      margin:0;
-      font-size:14px;
-      color:var(--muted);
-    }
-    .contact-card{
-      margin-top:20px;
-      background:#f3f7f5;
-      border:1px solid #e0e9e5;
-      border-radius:18px;
-      padding:14px 15px;
-      display:flex;
-      align-items:center;
-      gap:12px;
-      text-align:left;
-    }
-    .wa-icon{
-      width:42px;height:42px;border-radius:13px;
-      display:grid;place-items:center;
-      background:var(--green);
-      color:#fff;
-      font-weight:900;
-      font-size:20px;
-      flex:0 0 auto;
-    }
-    .contact-card small{
-      display:block;
-      color:var(--muted);
-      font-size:12px;
-      margin-bottom:3px;
-    }
-    .contact-card strong{
-      display:block;
-      color:#17352d;
-      font-size:16px;
-    }
-    .actions{
-      display:grid;
-      gap:11px;
-      margin-top:16px;
-    }
-    .btn{
-      border:0;
-      border-radius:15px;
-      padding:15px 16px;
-      text-decoration:none;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:9px;
-      font-weight:800;
-      font-size:15px;
-      transition:transform .12s ease, opacity .12s ease;
-    }
-    .btn:active{transform:scale(.985)}
-    .btn.primary{
-      background:linear-gradient(135deg,var(--green),var(--green2));
-      color:#fff;
-      box-shadow:0 10px 24px rgba(31,122,92,.22);
-    }
-    .btn.secondary{
-      background:linear-gradient(135deg,#f39a3d,var(--orange));
-      color:#fff;
-      box-shadow:0 10px 24px rgba(242,140,40,.20);
-    }
-    .qr-section{
-      margin-top:16px;
-      border-radius:20px;
-      background:#fff;
-      color:var(--text);
-      padding:18px;
-      text-align:center;
-      box-shadow:0 18px 38px rgba(0,0,0,.20);
-    }
-    .qr-section h2{
-      margin:0 0 5px;
-      font-size:17px;
-    }
-    .qr-section p{
-      margin:0 auto 13px;
-      max-width:300px;
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.45;
-    }
-    #qrcode{
-      width:170px;
-      min-height:170px;
-      margin:0 auto;
-      padding:10px;
-      border-radius:16px;
-      background:#fff;
-      display:grid;
-      place-items:center;
-      border:1px solid #e7ece9;
-    }
-    #qrcode img, #qrcode canvas{
-      max-width:150px!important;
-      width:150px!important;
-      height:150px!important;
-    }
-    .nfc{
-      margin-top:14px;
-      color:#dceae5;
-      text-align:center;
-      font-size:12px;
-      line-height:1.5;
-    }
-    .footer{
-      margin-top:15px;
-      text-align:center;
-      font-size:13px;
-      font-weight:700;
-      letter-spacing:.01em;
-      color:#fff4e8;
-      padding:14px 12px 2px;
-    }
-    .accent{
-      width:74px;height:4px;border-radius:99px;
-      margin:11px auto 0;
-      background:linear-gradient(90deg,var(--green2),var(--orange));
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06120f">
+<meta name="description" content="Cartão digital de Osvair Linhares - Centro Oeste Distribuidora de Peças">
+<title>Osvair Linhares | Centro Oeste Distribuidora de Peças</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#050c0a}
+  body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  .card{
+    position:relative;
+    width:min(100vw,768px);
+    line-height:0;
+    overflow:hidden;
+    background:#07110f;
+  }
+  .art{
+    width:100%;
+    height:auto;
+    display:block;
+    user-select:none;
+    -webkit-user-drag:none;
+  }
+  .hotspot{
+    position:absolute;
+    display:block;
+    z-index:4;
+    border-radius:14px;
+    text-decoration:none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .hotspot:focus-visible{
+    outline:3px solid #fff;
+    outline-offset:2px;
+  }
+
+  /* Áreas clicáveis alinhadas à arte */
+  .phone{
+    left:16.0%;
+    top:49.1%;
+    width:68.5%;
+    height:5.5%;
+  }
+  .contact{
+    left:15.8%;
+    top:56.3%;
+    width:68.9%;
+    height:7.4%;
+  }
+  .whatsapp{
+    left:15.8%;
+    top:64.4%;
+    width:68.9%;
+    height:7.4%;
+  }
+
+  /* QR real substitui visualmente o QR da arte */
+  .qr-wrap{
+    position:absolute;
+    z-index:5;
+    left:36.0%;
+    top:75.3%;
+    width:28.5%;
+    aspect-ratio:1/1;
+    background:#fff;
+    border-radius:8px;
+    display:grid;
+    place-items:center;
+    padding:2.6%;
+    box-shadow:0 0 0 2px rgba(112,160,44,.9);
+    line-height:normal;
+  }
+  .qr-wrap img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+  }
+
+  /* pequenas correções para telas muito estreitas */
+  @media (max-width:360px){
+    .card{width:100vw}
+  }
+</style>
 </head>
 <body>
-  <main class="shell">
-    <section class="hero">
-      <div class="brand">
-        <img src="logo-centro-oeste.png" alt="Centro Oeste Distribuidora de Peças">
-      </div>
-      <div class="divider"></div>
+<main class="card" aria-label="Cartão digital de Osvair Linhares">
+  <img class="art" src="cartao-visual.jpg" alt="Cartão digital de Osvair Linhares">
 
-      <div class="profile">
-        <div class="avatar">OL</div>
-        <h1>OSVAIR LINHARES</h1>
-        <p class="role">Gerente Comercial</p>
-        <p class="branch">Filial Senador Canedo</p>
-        <p class="company">Centro Oeste Distribuidora de Peças</p>
-      </div>
+  <a class="hotspot phone"
+     href="tel:+5562991590026"
+     aria-label="Ligar para Osvair Linhares"></a>
 
-      <div class="contact-card">
-        <div class="wa-icon">W</div>
-        <div>
-          <small>WhatsApp</small>
-          <strong>+55 62 99159-0026</strong>
-        </div>
-      </div>
+  <a class="hotspot contact"
+     href="osvair-linhares.vcf"
+     aria-label="Adicionar Osvair Linhares aos contatos"></a>
 
-      <div class="actions">
-        <a class="btn primary" href="osvair-linhares.vcf">
-          ＋ Adicionar aos contatos
-        </a>
-        <a class="btn secondary" href="https://wa.me/5562991590026" target="_blank" rel="noopener">
-          ✆ Falar no WhatsApp
-        </a>
-      </div>
-    </section>
+  <a class="hotspot whatsapp"
+     href="https://wa.me/5562991590026"
+     target="_blank"
+     rel="noopener"
+     aria-label="Falar com Osvair Linhares no WhatsApp"></a>
 
-    <section class="qr-section">
-      <h2>Compartilhe meu contato</h2>
-      <p>Aponte a câmera para o QR Code. Depois de publicado, ele usa automaticamente o endereço atual desta página.</p>
-      <div id="qrcode">Gerando QR Code…</div>
-    </section>
-
-    <div class="nfc">
-      <strong>Preparado para NFC.</strong><br>
-      Quando o chip chegar, grave nele exatamente o mesmo link desta página.
-    </div>
-
-    <footer class="footer">
-      Procedência e tradição em cada componente.
-      <div class="accent"></div>
-    </footer>
-  </main>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script>
-    (function(){
-      var box = document.getElementById("qrcode");
-      box.innerHTML = "";
-      var url = window.location.href.split("#")[0];
-      if (typeof QRCode !== "undefined") {
-        new QRCode(box, {
-          text: url,
-          width: 150,
-          height: 150,
-          correctLevel: QRCode.CorrectLevel.H
-        });
-      } else {
-        box.textContent = "QR Code disponível após conexão com a internet.";
-      }
-    })();
-  </script>
+  <a class="qr-wrap"
+     href="https://osvairlinhares.github.io/cartao-osvair/"
+     aria-label="Abrir o cartão digital pelo QR Code">
+    <img src="qr-code.png" alt="QR Code do cartão digital">
+  </a>
+</main>
 </body>
 </html>

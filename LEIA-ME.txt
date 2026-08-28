@@ -1,30 +1,19 @@
-CARTÃO DIGITAL PROFISSIONAL — OSVAIR LINHARES
+CARTÃO DIGITAL FINAL — OSVAIR LINHARES
 
-ARQUIVOS
-- index.html
-- logo-centro-oeste.png
-- osvair-linhares.vcf
+Esta versão usa a arte aprovada como visual principal e mantém as funções reais:
 
-PUBLICAR NO GITHUB
-1. Abra o repositório cartao-osvair.
-2. Envie estes 3 arquivos para a raiz do repositório.
-3. Se já houver arquivos antigos com os mesmos nomes, substitua-os.
-4. Vá em Settings > Pages.
-5. Em Build and deployment, escolha Deploy from a branch.
-6. Selecione main e / (root), depois Save.
-7. Aguarde o GitHub informar a URL pública.
+- Toque no número: liga para +55 62 99159-0026
+- "Adicionar aos contatos": abre o arquivo VCF
+- "Falar no WhatsApp": abre a conversa no WhatsApp
+- QR Code: aponta para https://osvairlinhares.github.io/cartao-osvair/
+- O mesmo link poderá ser gravado no NFC futuramente
 
-QR CODE
-O QR Code é gerado automaticamente usando o endereço atual da página.
-Depois que o GitHub Pages estiver publicado, ele apontará para a URL real.
+ARQUIVOS PARA SUBSTITUIR/ENVIAR NO GITHUB:
+1. index.html
+2. cartao-visual.jpg
+3. qr-code.png
+4. osvair-linhares.vcf
 
-NFC
-Quando comprar o chip NFC, grave exatamente a URL pública do GitHub Pages.
-
-DADOS DO CARTÃO
-OSVAIR LINHARES
-Gerente Comercial
-Filial Senador Canedo
-Centro Oeste Distribuidora de Peças
-WhatsApp +55 62 99159-0026
-Rodapé: Procedência e tradição em cada componente.
+No repositório cartao-osvair, envie os quatro arquivos para a raiz.
+Se o GitHub perguntar sobre arquivos com o mesmo nome, confirme a substituição.
+Depois aguarde a atualização automática do GitHub Pages.
