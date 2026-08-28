@@ -1,0 +1,19 @@
+CARTÃO DIGITAL FINAL — OSVAIR LINHARES
+
+Esta versão usa a arte aprovada como visual principal e mantém as funções reais:
+
+- Toque no número: liga para +55 62 99159-0026
+- "Adicionar aos contatos": abre o arquivo VCF
+- "Falar no WhatsApp": abre a conversa no WhatsApp
+- QR Code: aponta para https://osvairlinhares.github.io/cartao-osvair/
+- O mesmo link poderá ser gravado no NFC futuramente
+
+ARQUIVOS PARA SUBSTITUIR/ENVIAR NO GITHUB:
+1. index.html
+2. cartao-visual.jpg
+3. qr-code.png
+4. osvair-linhares.vcf
+
+No repositório cartao-osvair, envie os quatro arquivos para a raiz.
+Se o GitHub perguntar sobre arquivos com o mesmo nome, confirme a substituição.
+Depois aguarde a atualização automática do GitHub Pages.
